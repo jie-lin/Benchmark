@@ -141,7 +141,8 @@ public class SonarQubeReader extends Reader {
         case "S1873" : return 582; //S1873-"static final" arrays should be"private"
         case "S1948" : return 594; //S1948-Fields in a"Serializable" class should either be transient or serializable
         case "S2068" : return 259; //S2068-Credentials should not be hard-coded
-        case "S2070" : return 328; //S2070-SHA-1 and Message-Digest hash algorithms should not be used
+        case "S2070" : return 328; //S2070-SHA-1 and Message-Digest hash algorithms should not be used(This rule is deprecated; use S4790 instead.)
+	case "S4790" : return 328; //S4790-Hashing data is security-sensitive
         case "S2076" : return 78; //S2076-Values passed to OS commands should be sanitized
         case "S2077" : return 89; //S2077-Values passed to SQL commands should be sanitized
         case "S2078" : return 90; //S2078-Values passed to LDAP queries should be sanitized
