@@ -136,7 +136,8 @@ public class SonarQubeReader extends Reader {
         case "S1696" : return 395; //S1696-"NullPointerException" should not be caught
         case "S1698" : return 595; //S1698-Objects should be compared with"equals()"
         case "S1724" : return 0000; //S1724-Deprecated classes and interfaces should not be extended/implemented
-        case "S1850" : return 0000; //S1850-"instanceof" operators that always return "true" or"false" should be removed
+        case "S1850" : return 0000; //S1850-"instanceof" operators that always return "true" or"false" should be removed(This rule is deprecated; use S2589 instead.)
+	case "S2589" : return 0000; //S2589-Boolean expressions should not be gratuitous
         case "S1872" : return 486; //S1872-Classes should not be compared by name
         case "S1873" : return 582; //S1873-"static final" arrays should be"private"
         case "S1948" : return 594; //S1948-Fields in a"Serializable" class should either be transient or serializable
