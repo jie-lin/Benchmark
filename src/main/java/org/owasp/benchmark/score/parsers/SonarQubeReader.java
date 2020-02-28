@@ -138,7 +138,7 @@ public class SonarQubeReader extends Reader {
         case "S1698" : return 595; //S1698-Objects should be compared with"equals()"
         case "S1724" : return 0000; //S1724-Deprecated classes and interfaces should not be extended/implemented
         case "S1850" : return 0000; //S1850-"instanceof" operators that always return "true" or"false" should be removed(This rule is deprecated; use S2589 instead.)
-	case "S2589" : return 0000; //S2589-Boolean expressions should not be gratuitous
+        case "S2589" : return 0000; //S2589-Boolean expressions should not be gratuitous
         case "S1872" : return 486; //S1872-Classes should not be compared by name
         case "S1873" : return 582; //S1873-"static final" arrays should be"private"
         case "S1948" : return 594; //S1948-Fields in a"Serializable" class should either be transient or serializable
@@ -162,7 +162,6 @@ public class SonarQubeReader extends Reader {
         case "S2278" : return 327; //S2278-DES (Data Encryption Standard) and DESede (3DES) should not be used
         case "S2384" : return 374; //S2384-Mutable members should not be stored or returned directly
         case "S2441" : return 579; //S2441-Non-serializable objects should not be stored in"HttpSessions"
-        case "S2583" : return 489; //S2583-Conditions should not unconditionally evaluate to"TRUE" or to"FALSE"
         case "S864" : return 783; //S864-Limited dependence should be placed on operator precedence rules in expressions
         case "S888" : return 835; //S888-Relational operators should be used in"for" loop termination conditions
         }
