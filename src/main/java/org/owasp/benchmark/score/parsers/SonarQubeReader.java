@@ -123,7 +123,8 @@ public class SonarQubeReader extends Reader {
         case "S00121" : return 483; //S00121-Control structures should always use curly braces
         case "S1132" : return 0000; //S1132-Move the "foo" string literal on the left side of this string comparison.
         case "S1143" : return 584; //S1143-"return " statements should not occur in"finally" blocks
-        case "S1145" : return 0000; //S1145-"if" statement conditions should not unconditionally evaluate to"true" or to"false"
+        case "S1145" : return 0000; //S1145-"if" statement conditions should not unconditionally evaluate to"true" or to"false"(This rule is deprecated; use S2583 instead.)
+	case "S2583" : return 0000; //S2583-Conditionally executed blocks should be reachable
         case "S1147" : return 382; //S1147-Exit methods should not be called
         case "S1174" : return 583; //S1174-"Object.finalize()" should remain protected (versus public) when overriding
         case "S1181" : return 396; //S1181-Throwable and Error should not be caught
